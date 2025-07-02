@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers - ArunShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-shopping-bag"></i>
+            <h1>ArunShop</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+            <a href="deals.html" class="active">Deals</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Deals Page Content -->
+    <main class="deals-page">
+        <!-- Featured Deal Banner -->
+        <section class="featured-deal">
+            <div class="deal-banner">
+                <div class="deal-content">
+                    <h2>Flash Sale!</h2>
+                    <p>Up to 70% off on selected items</p>
+                    <div class="countdown">
+                        <span class="countdown-item">
+                            <span class="countdown-value" id="hours">24</span>
+                            <span class="countdown-label">Hours</span>
+                        </span>
+                        <span class="countdown-item">
+                            <span class="countdown-value" id="minutes">59</span>
+                            <span class="countdown-label">Minutes</span>
+                        </span>
+                        <span class="countdown-item">
+                            <span class="countdown-value" id="seconds">59</span>
+                            <span class="countdown-label">Seconds</span>
+                        </span>
+                    </div>
+                    <a href="#featured-products" class="btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Deals -->
+        <section class="daily-deals">
+            <h2>Today's Deals</h2>
+            <div class="deals-grid">
+                <!-- Deal cards will be dynamically loaded -->
+            </div>
+        </section>
+
+        <!-- Category Deals -->
+        <section class="category-deals">
+            <h2>Deals by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=500&fit=crop" alt="Electronics">
+                    <div class="category-info">
+                        <h3>Electronics</h3>
+                        <p>Up to 50% off</p>
+                        <a href="products.html?category=electronics" class="btn-primary">View Deals</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=500&fit=crop" alt="Fashion">
+                    <div class="category-info">
+                        <h3>Fashion</h3>
+                        <p>Up to 60% off</p>
+                        <a href="products.html?category=fashion" class="btn-primary">View Deals</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500&h=500&fit=crop" alt="Home">
+                    <div class="category-info">
+                        <h3>Home & Kitchen</h3>
+                        <p>Up to 45% off</p>
+                        <a href="products.html?category=home" class="btn-primary">View Deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="featured-products" class="featured-products">
+            <h2>Featured Deals</h2>
+            <div class="products-grid">
+                <!-- Featured products will be dynamically loaded -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About ArunShop</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="press.html">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="orders.html">Order History</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ArunShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/deals.js"></script>
+</body>
+</html> 
